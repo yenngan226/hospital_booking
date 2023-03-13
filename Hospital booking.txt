@@ -1,0 +1,29 @@
+Hospital booking 
+
+"dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "nodemon": "^2.0.7"
+  }
+
+yarn add body-parser@1.19.0 dotenv@8.2.0 ejs@3.1.5 express@4.17.1
+
+yarn add -D @babel/core@7.12.10 @babel/node@7.12.10 @babel/preset-env@7.12.10 nodemon@2.0.7
+
+yarn add -D sequelize-cli@6.2.0 sequelize@6.6.2 mysql2@2.2.5
+
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+
+- dotenv: lấy được các tham số quy định trong file môi trường
+- body-parser: Parse incoming request bodies in a middleware before your handlers, available under the req.body property. Phân giải body khi gửi lên từ postman hoặc khi user request
+- ejs: view engine, dùng để tạo 1 cái view trên phía server
+-babel: Babel is a JavaScript compiler that is used to transform ECMAScript 2015+ (ES6+) code into a backwards-compatible version of JavaScript that can be run in older browsers or environments that don't support the latest JavaScript features.
+nodemon: run server again when we code instead of re run server
